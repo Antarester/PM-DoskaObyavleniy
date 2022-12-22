@@ -1,0 +1,28 @@
+# Logs
+HGPFront/logs
+HGPFront/*.log
+HGPFront/npm-debug.log*
+HGPFront/yarn-debug.log*
+HGPFront/yarn-error.log*
+HGPFront/pnpm-debug.log*
+HGPFront/lerna-debug.log*
+
+*/node_modules
+HGPFront/.DS_Store
+HGPFront/dist
+HGPFront/dist-ssr
+HGPFront/coverage
+HGPFront/*.local
+
+HGPFront/cypress/videos/
+HGPFront/cypress/screenshots/
+
+# Editor directories and files
+HGPFront/.vscode/*
+HGPFront/!.vscode/extensions.json
+HGPFront/.idea
+HGPFront/*.suo
+HGPFront/*.ntvs*
+HGPFront/*.njsproj
+HGPFront/*.sln
+HGPFront/*.sw?
