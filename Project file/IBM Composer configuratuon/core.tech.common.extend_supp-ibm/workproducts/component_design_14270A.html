@@ -1,0 +1,436 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Component Design</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="component_design">
+<meta name="uma.presentationName" content="Component Design">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_31uc8M5FEdu7c6SGcTVf1A"]}, {view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_31uc8M5FEdu7c6SGcTVf1A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_31uc8M5FEdu7c6SGcTVf1A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Артефакт: Component Design</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes the realization of one or more components, detailing their internal behavior and any other design level details important to their implementation.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../core.default.cat_def.base/domains/architecture_domain_7028166D.html" guid="_1r0bcK80Edy9cPK11VzBuQ">Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    This artifact&nbsp;serves as an abstraction of the implementation and technology choices and is also used to the following:
+</p>
+<ul>
+    <li>
+        Conceive&nbsp;and/or&nbsp;document the design
+    </li>
+    <li>
+        Establish traceability from the design back to the architecture as the component realizations described in this
+        artifact conform to their corresponding specifications in the architecture
+    </li>
+    <li>
+        Assist with the partitioning of work, particularly in large systems
+    </li>
+    <li>
+        Ensure that design principles, patterns and mechanisms are applied in a consistent fashion
+    </li>
+    <li>
+        Gain agreement before implementation or to document key aspects of the design after implementation, or both
+    </li>
+</ul><br />
+<br /></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Описание</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Основное описание</th><td class="sectionTableCell"><p>
+    This artifact is a specification of the internal structure and behavior of one or more major structural elements
+    (components) of a system.&nbsp; Each component realization describes the internal behaviors of a component that realize
+    its interfaces.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Краткая схема</th><td class="sectionTableCell"><p>
+    This artifact typically contains:
+</p>
+<ul>
+    <li>
+        Overview and context information
+    </li>
+    <li>
+        Design packages
+    </li>
+    <li>
+        Component realizations
+    </li>
+    <li style="LIST-STYLE-TYPE: none">
+        <ul>
+            <li>
+                Overview of the design, constraints, and goals for the component
+            </li>
+            <li>
+                Key relationships between internal component elements
+            </li>
+            <li>
+                Diagrams describing how the component's internal elements realize its specified interface operations
+            </li>
+        </ul>
+    </li>
+    <li>
+        Design-level collaborations focused around a particular set of requirements, for example, use case realizations
+    </li>
+    <li>
+        Implementation guidance
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Нотация</th><td class="sectionTableCell"><p>
+    UML 2.0 provides the graphical notation and semantics for component design modeling. Key constructs and diagrams are
+    briefly described below.
+</p>
+<p>
+    <strong>Component</strong><br />
+    The black-box view of a component is represented in UML 2.0 as a rectangle with the name of the component inside. It
+    has a stereotype of &lt;&lt;component&gt;&gt; and can include a tabbed rectangle icon. It can include compartments for
+    interfaces as well as artifacts.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp; &nbsp;&nbsp; <img alt="Black Box Component" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/black_box_component.gif" width="146"     height="61" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="Black Box Component with Interface Compartments" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/black_box_component_interface_compartments.gif"     width="238" height="127" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>Figure 1: Black Box Component Representations</strong>
+</p><br />
+<p>
+    White-box component realizations can be represented a few ways depending on the complexity of the component or the
+    amount of documentation required.
+</p>
+<p>
+    The simplest approach is to add a compartment stereotyped &lt;&lt;realizations&gt;&gt; to the black-box component and
+    list the classifiers that realize it.<br />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="White Box Component - simple representation" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/white_box_component_simple.gif" width="238"     height="173" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Figure 2: White Box Component - Simple Representation</strong>
+</p><br />
+<p>
+    Another approach shows each classifier with a dependency to the component it realizes.
+</p>
+<p>
+    <br />
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="White box Component - showing dependencies" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/white_box_component_medium.gif" width="510"     height="159" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;<strong>Figure 3: White Box Component - Representation Showing Dependencies</strong>
+</p><br />
+<p>
+    When a detailed view of component internals is required, place the component's classifiers inside of the black-box
+    component rectangle.&nbsp; Ports specify a point of interaction between the component and its environment and between
+    the component and its internal classifiers. Connectors map a port to the internal classifier that realizes the
+    functionality.&nbsp; A connector is described by a solid line with a filled arrow from the port (a small square symbol)
+    to the classifier.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="White Box Component - complex representation" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/white_box_component_complex.gif" width="528"     height="307" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>Figure 4: White Box Component - Detailed Representation</strong>
+</p><br />
+<p>
+    For white-box views of very complex components you can create a separate class diagram that links to its component.
+    Note that components can be nested inside other components.
+</p><br />
+<p>
+    <strong>Representing Static and Dynamic Aspects of a Component</strong>
+</p>
+<p>
+    <strong>Class Diagram</strong>
+</p>
+<p>
+    The static aspects of a component's internal design are described by UML class diagrams. The class diagram is a
+    structural representation of objects and their static relationships described using the following structuring
+    constructs:
+</p>
+<ul>
+    <li>
+        Classes
+    </li>
+    <li>
+        &nbsp;Attributes (representing the knowledge responsibilities or data)
+    </li>
+    <li>
+        Methods (representing operational responsibilities or functions)
+    </li>
+    <li>
+        Association relationships between classes
+    </li>
+    <li>
+        Aggregation relationships between aggregate and component classes
+    </li>
+    <li>
+        Inheritance relationships between superclasses and subclasses
+    </li>
+    <li>
+        Formal or informal constraint descriptions<br />
+    </li>
+</ul>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img alt="Class Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/class_diagram.gif" width="296" height="314" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<strong>Figure 5: Class Diagram</strong><br />
+</p>
+<p>
+    <strong>Interaction Diagram</strong>
+</p>
+<p>
+    <br />
+    The dynamic aspects of a component's internal design are described by UML interaction diagrams (sequence or
+    communication diagrams).&nbsp; These diagrams show how the sequence of interactions between the component's internal
+    classifiers realizes its specified interfaces.
+</p>
+<p>
+    <br />
+    Sequence diagrams are better for displaying and understanding the trace of messages or communication patterns.
+    Collaboration diagrams are better for displaying the relationships between the objects involved in the interaction.
+    Sequence diagrams tend to be the most common form of interaction diagram,&nbsp;because&nbsp;the goal of most
+    interaction diagrams is to describe communications rather than relationships.<br />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img     alt="Collaboration Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/collaboration_diagram.gif" width="546" height="299" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Figure 6:&nbsp; Collaboration Diagram</strong>
+</p><br />
+<br />
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img alt="Sequence Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/sequence_diagram.gif"     width="600" height="246" />
+</p>
+<p>
+    <span     style="FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <strong>Figure 7: Sequence Diagram</strong></span>
+</p><br />
+<br />
+<p>
+    <span     style="FONT-FAMILY: Arial; FONT-SIZE: 10pt; mso-fareast-font-family: 'Times New Roman'; mso-bidi-font-family: 'Times New Roman'; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">For
+    more notation information, see Guideline: <a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/component_design_modeling_333D845E.html" guid="_-D22AApEEdyQC7HwSt7FXA">Component Design Modeling</a></span>&nbsp;
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Ключевые условия</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    In circumstances where the design of a component involves applying well understood, existing strategies, it is possible
+    that you will not need a <em>new</em> design. In those cases, you can simply refer to some existing design.
+</p>
+<p>
+    Decide on the following:
+</p>
+<ul>
+    <li>
+        Properties to include
+    </li>
+    <li>
+        Whether or not any extensions to the Unified Modeling Language (UML) are needed; for example, your project may
+        require additional stereotypes
+    </li>
+    <li>
+        The level of formality applied to the model
+    </li>
+    <li>
+        If the model is mapped to other models, such as an architectural models and how
+    </li>
+    <li>
+        Whether a single model or multiple models will be used
+    </li>
+    <li>
+        How the model is mapped to an implementation model (this is very much affected by the decision to use
+        reverse-engineering, code generation, or round-trip engineering); see Concept: Mapping from Code to Design
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Последствия отсутствия</th><td class="sectionTableCell"><p>
+    The absence of this artifact may result in:
+</p>
+<ul>
+    <li>
+        Incomplete specification of code with design decisions left undocumented and not easily recognizable from the
+        source code
+    </li>
+    <li>
+        Poor extensibility and maintainability of components
+    </li>
+    <li>
+        Incomplete coverage of objects, relationships, and constraints to the design
+    </li>
+    <li>
+        Incomplete and erroneous realization of the interfaces required by the components of the system
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Причины для отказа</th><td class="sectionTableCell"><p>
+    Reasons for not needing this artifact include:
+</p>
+<ul>
+    <li>
+        There is no code or minimal code in this project
+    </li>
+    <li>
+        The implementation language is not an object-oriented language
+    </li>
+    <li>
+        The project is configuring packaged products rather than developing custom components
+    </li>
+    <li>
+        The design is expressed using another form, such as CRC cards
+    </li>
+    <li>
+        The implementation is understandable without design documentation
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Опции представления</th><td class="sectionTableCell"><p>
+    <font size="2">This artifact can be lightweight and informal, or substantial and formal according to the level of
+    design that should be documented for the project.</font>
+</p>
+<p>
+    Possible representations include the following:
+</p>
+<ul>
+    <li>
+        <font size="2">Design documented directly in the code</font>
+    </li>
+    <li>
+        <font size="2">A visual model created in a tool like Rational Software Architect</font>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/component_design_BFEE7D50.html" guid="_KBBk4ApAEdyQC7HwSt7FXA">Component Design</a>
+</li>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/uml_modeling_6897AD6A.html" guid="_4d41UAZmEd2qxfogjH9NyA">UML Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/component_design_modeling_333D845E.html" guid="_-D22AApEEdyQC7HwSt7FXA">Component Design Modeling</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Рекомендации по оценке</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/component_design_2CB171B8.html" guid="_bocukApAEdyQC7HwSt7FXA">Component Design</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div>
+<div id="bg"></div>
+<div id="content-comment-rtc-oslc"></div>
+</div>
+<script src="./../../scripts/ContentComment.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/css/comment.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentComment.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

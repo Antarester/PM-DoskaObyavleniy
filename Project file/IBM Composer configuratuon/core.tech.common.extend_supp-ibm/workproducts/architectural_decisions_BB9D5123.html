@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Architectural Decisions</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="architectural_decisions">
+<meta name="uma.presentationName" content="Architectural Decisions">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_a0vYAM5bEdu7c6SGcTVf1A"]}, {view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_a0vYAM5bEdu7c6SGcTVf1A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_a0vYAM5bEdu7c6SGcTVf1A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Артефакт: Architectural Decisions</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Documents key decisions about the architecture and the rationale behind those decisions.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../core.default.cat_def.base/domains/architecture_domain_7028166D.html" guid="_1r0bcK80Edy9cPK11VzBuQ">Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of this artifact is to:
+</p>
+<ul type="disc">
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure there is a single, authoritative source for communicating
+        key decisions made about the architecture</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Record the rationale and reasoning behind each decision</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Maintain the overall architectural integrity of the solution by
+        ensuring all decisions are consistent with each other</span>
+    </li>
+    <li class="MsoNormal"     style="MARGIN: 0in 0in 0pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto; mso-list: l0 level1 lfo1; tab-stops: list .5in">
+        <span style="FONT-SIZE: 10pt; FONT-FAMILY: Arial">Ensure the same issues are not addressed more than once because
+        the resolution was forgotten</span>
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Описание</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Основное описание</th><td class="sectionTableCell"><p>
+    This artifact documents key architectural decisions and the rationale behind those decisions.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Краткая схема</th><td class="sectionTableCell"><p class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+    The Architectural Decisions artifact contains the following sections:&nbsp;<br />
+    &nbsp;
+</p>
+<ul>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Summary and Status</strong> - summarizes all decisions and their status
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architecturally Significant Requirements</strong> - lists requirements that must be implemented to
+            realize the architecture
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Constraints</strong> - lists any constraints on the way developers must build the system
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Reusable Assets</strong> - lists any potentially reusable assets; notes whether each asset is to be
+            used as-is, enhanced, or not used; cites reasons for each decision
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>Architectural Mechanisms</strong> - lists the architectural mechanisms and describes the current state
+            of each one
+        </div>
+    </li>
+    <li>
+        <div class="MsoNormal" style="MARGIN: 0in 0in 0pt 4.5pt; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto">
+            <strong>General Findings and Recommendations</strong> - lists any other decisions
+        </div>
+    </li>
+</ul>
+<p>
+    Capture the following information for each architectural decision:<br />
+    <br />
+</p>
+<ul>
+    <li>
+        <strong>Problem</strong> - What is being decided or the issue that is being addressed.
+    </li>
+    <li>
+        <strong>Assumptions</strong> - What is believed to be true about the context of the problem.
+    </li>
+    <li>
+        <strong>Motivation</strong> - Why this decision is important.
+    </li>
+    <li>
+        <strong>Alternatives</strong> - A list of options considered and explanations.
+    </li>
+    <li>
+        <strong>Decision</strong> - The decision taken, possibly with references to related artifacts.
+    </li>
+    <li>
+        <strong>Justification</strong> - Why the decision was made together with reference to any supporting principles and
+        explanations of deviations from compliance.<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Иллюстрации</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Шаблоны</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/templates/architectual_decisions_formal_C8324FAA.html" guid="_JMIQADetEdyrF6K2SkiByg">Architectural Decisions (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Примеры</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/architectural_decisions_2664E7E2.html" guid="_5pNfQDetEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Ключевые условия</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Some important considerations for making and implementing architectural decisions:<br />
+</p>
+<ul>
+    <li>
+        Make sure the process for making decisions has the right level of sponsorship necessary to enforce those decisions
+    </li>
+    <li>
+        Make architecturally significant decisions early and be sure to validate high risk decisions using an executable
+        architecture
+    </li>
+    <li>
+        Review and update architectural decisions as development progresses and update this artifact so it reflects any
+        changes to your decisions
+    </li>
+    <li>
+        It is not necessary to document every minute decision you make when developing the architecture; focus on those
+        that are controversial or are based on reasoning that is not obvious<br />
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Последствия отсутствия</th><td class="sectionTableCell"><p>
+    If architectural decisions are not recorded, we may see one or more of the following problems:<br />
+</p>
+<ul>
+    <li>
+        Different parties may make decisions more than once, and the decision may be different each time
+    </li>
+    <li>
+        You may have difficulty getting closure on controversial decisions due to unclear rationale
+    </li>
+    <li>
+        Decisions may be inconsistent or contradict other decisions
+    </li>
+    <li>
+        New people on the project may take longer to understand the architecture<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Причины для отказа</th><td class="sectionTableCell"><p>
+    When an architecture is under development, there are virtually no reasons not to record architectural decisions. This
+    artifact is not needed if the decisions have been captured elsewhere, but be sure you have captured the additional
+    information such as rationale and options considered.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Опции представления</th><td class="sectionTableCell"><p>
+    You may simply document Architectural Decisions as free format text with headings like problem, alternatives,
+    resolution, and justification.&nbsp;A tabular format in a document or spreadsheet is an effective way to organize
+    Architectural Decisions. A more sophisticated option is to use databases, collaboration tools, or requirements
+    management tools.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/architectural_decisions_8E0A246E.html" guid="_Dj7t4DesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Рекомендации по оценке</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/architectural_decisions_BCB88E5D.html" guid="_qMfIADesEdyrF6K2SkiByg">Architectural Decisions</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div>
+<div id="bg"></div>
+<div id="content-comment-rtc-oslc"></div>
+</div>
+<script src="./../../scripts/ContentComment.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/css/comment.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentComment.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

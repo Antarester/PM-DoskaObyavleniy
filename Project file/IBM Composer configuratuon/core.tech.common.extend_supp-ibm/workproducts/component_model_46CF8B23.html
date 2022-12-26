@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Component Model</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="component_model">
+<meta name="uma.presentationName" content="Component Model">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_YLmNgM5FEdu7c6SGcTVf1A"]}, {view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_1r0bcK80Edy9cPK11VzBuQ", "_YLmNgM5FEdu7c6SGcTVf1A"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_YLmNgM5FEdu7c6SGcTVf1A"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Артефакт: Component Model</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">Describes the functional view of a system, including both the structure and modularity of the software components. Depicts the dynamic behavior of the components and the way in which they interact to accomplish the required functionality.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../core.default.cat_def.base/domains/architecture_domain_7028166D.html" guid="_1r0bcK80Edy9cPK11VzBuQ">Architecture</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    The purpose of the component model is to help organize projects, manage the complexity of the solution, and ensure that
+    all architecturally requirements have been addressed. It helps developers design and implement the solution and
+    understand the big picture of the system design.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Описание</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Основное описание</th><td class="sectionTableCell"><p>
+    The component model describes the structure of a system in terms of its software components with their
+    responsibilities, interfaces, relationships, and the way they collaborate to deliver the required functionality. The
+    component model is the main artifact documenting the functional view of the architecture and serves as an abstraction
+    of the design. Components identified may be decomposed into further component models before they complete the
+    specification required for detailed design.<br />
+</p>
+<p>
+    Component models help define and document:<br />
+</p>
+<ul>
+    <li>
+        The structure of the system
+    </li>
+    <li>
+        The recurring interactions and dependencies between sets of components
+    </li>
+    <li>
+        The components present within an enterprise, each of which may be made up of smaller components.
+    </li>
+</ul>
+<p>
+    Component models are documented at 2 levels:<br />
+</p>
+<ul>
+    <li>
+        The logical level - focuses on specifying the components' responsibilities and characteristics required to deliver
+        the requirements. These specifications are technology and product neutral.
+    </li>
+    <li>
+        The physical level -focuses on how to implement the components to meet the previously established specifications.
+    </li>
+</ul>
+<p>
+    You may transform logical components into physical components via custom development, the purchase of products, or the
+    reuse of assets.<br />
+</p>
+<p>
+    It may be important to maintain a separation between logical and physical components on larger projects. However,
+    smaller or less complex projects may evolve a single logical component model into a physical model, and end up with
+    only a physical model.<br />
+</p>
+<p>
+    Examples of components at the logical level are a 'Message Bus' or a 'Customer Relationship Manager' component.
+    Components at the physical level that implement these logical components might be 'IBM WebSphere Message Broker' or
+    'Siebel Contact Center.'<br />
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Краткая схема</th><td class="sectionTableCell"><p>
+    The Component Model consists of:<br />
+</p>
+<ul>
+    <li>
+        <strong>Introduction.</strong> Describes the context, purpose, scope, and intended audience of the component model.
+    </li>
+    <li>
+        <strong>Model Overview.</strong> Explains how the model has been organized, particularly if several component
+        models were built.
+    </li>
+    <li>
+        <strong>Notation.</strong> If appropriate, describes any notation used in the document.
+    </li>
+    <li>
+        <strong>Overview of Layers and Subsystems.</strong> May describe logical components and/or physical components.
+    </li>
+    <li>
+        <strong>Component Relationship Diagrams.</strong> Shows the relationships between components.
+    </li>
+    <li>
+        <strong>Component Interaction Diagrams.</strong> Describes the collaboration between components.
+    </li>
+    <li>
+        <strong>Component Descriptions.</strong> Describes in detail each component's responsibilities and interfaces,
+        required service levels (non-functional requirements), risk, design rationale, and implementation approach.<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Нотация</th><td class="sectionTableCell"><p>
+    The different kinds of diagrams and their associated notation used in documenting the Component Model are summarized
+    below.
+</p>
+<p>
+    <strong>Component Relationship Diagram</strong>
+</p>
+<p>
+    A Component Relationship Diagram shows the static dependency relationships between components or subsystems.<br />
+    <img height="361" alt="Component Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/component_diagram.gif" width="546" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 1 - Component Relationship Diagram
+</p>
+<p>
+    <strong>Component Interaction Diagram</strong>
+</p>
+<p>
+    A Component Interaction Diagram shows the interactions between individual component instances and how a number of such
+    component instances collaborate together to realize a scenario. Interaction diagrams also show the sequential flow of
+    messages over time.
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img height="294"     alt="Component Interaction Diagram" src="./../../core.tech.common.extend_supp-ibm/workproducts/./resources/component_interaction_diagram.gif" width="600" />
+</p>
+<p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Figure 2 - Component Interaction Diagram
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Выбранное представление</th><td class="sectionTableCell"><p>
+    A UML modeling tool is the preferred method for developing the component model. UML 2.0 is the standard notation.
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Иллюстрации</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Шаблоны</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/templates/component_model_formal_66108D2F.html" guid="_Fxgu0DejEdyFMtjeREc5MQ">Component Model (formal)</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Примеры</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/component_model_E382216F.html" guid="_m39qIDfWEdyIwaPzqVg2tg">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Ключевые условия</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><p>
+    Points to consider when deciding whether to use a Component Model:<br />
+</p>
+<ul>
+    <li>
+        A Component Model is useful when you must design the system for multiple target environments, with separate design
+        architectures. The Component Model is an abstraction, or a generalization, of the system design. It omits most of
+        the details of the design in order to provide an overview of the system's functionality.
+    </li>
+    <li>
+        The Component Model provides value when the design is complex, such that new team members need a simplified,
+        abstracted model to understand it. A well-defined architecture can serve the same purpose.
+    </li>
+    <li>
+        Balance the extra work required to ensure that the component and design models remain consistent against the
+        benefit of having a view of the system that represents only the most important details of how the system works. It
+        can be very costly to maintain a high degree of fidelity between the Component Model and the system design. A less
+        ambitious approach might be to maintain the Component Model with only the most important components and the key
+        abstractions in the design. As the complexity of the Component Model increases, so does the cost to maintain it.
+    </li>
+    <li>
+        Once you no longer maintain the Component Model, its value decays rapidly. At some point, it no longer accurately
+        reflects the current functional design of the system. Deciding to no longer maintain the Component Model may be
+        appropriate, as it may have served its purpose, but the decision should be a conscious one.
+    </li>
+</ul>
+<p>
+    Component models tend to be useful in companies where systems live for decades, or where there are many variants of the
+    system.<br />
+</p>
+<p>
+    To ensure the successful development of a component model on a project, your team should:<br />
+</p>
+<ul>
+    <li>
+        Create a stable and coherent structure
+    </li>
+    <li>
+        Focus on the right levels of abstraction
+    </li>
+    <li>
+        Develop relationship and interaction diagrams in parallel
+    </li>
+    <li>
+        Select architecturally significant requirements as inputs to the Component Model
+    </li>
+    <li>
+        Plan how your team will leverage the Component Model throughout the project lifecycle
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Последствия отсутствия</th><td class="sectionTableCell"><p>
+    It is difficult to gain an understanding of the structure of a complex system without some kind of component
+    model.<br />
+</p>
+<p>
+    The absence of this artifact may result in:<br />
+</p>
+<ul>
+    <li>
+        Difficulty managing the development project&nbsp;
+    </li>
+    <li>
+        The need for individual designers and developers to understand most of the inner details of the entire system&nbsp;
+    </li>
+    <li>
+        Difficulty managing parallel development due to imprecise definitions of the work allocated to development groups
+    </li>
+    <li>
+        Missed opportunities for reuse of high level components&nbsp;
+    </li>
+    <li>
+        An incomplete design with key design elements missing
+    </li>
+    <li>
+        Lack of information (such as the relevant service level requirements) essential to the appropriate placement of
+        applications and data across the system infrastructure
+    </li>
+    <li>
+        Difficulty tracing requirements through implementation and validating that the architecturally significant
+        requirements are realized in the executable architecture<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Причины для отказа</th><td class="sectionTableCell"><p>
+    A Component Model may not be necessary when:<br />
+</p>
+<ul>
+    <li>
+        The overall system to be developed is quite small
+    </li>
+    <li>
+        The functional view of the overall system can be adequately described in some other form, as may be the case with a
+        simple package-based organization of the architecture<br />
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Опции представления</th><td class="sectionTableCell"><p>
+    Ideally, you should represent component models using a UML modeling tool that supports the UML 2 notation defined for
+    this artifact. Modeling tools help ensure consistency between models and between the various diagrams they contain by
+    allowing model elements to be shared among many models or diagrams. These tools also allow multiple views of the same
+    model.<br />
+</p>
+<p>
+    Alternatively, you can represent component models through a series of stand-alone diagrams developed in diagramming
+    tools, then bound together within a word-processing document. A diagramming tool is difficult to maintain if any model
+    element appears in multiple diagrams, as changes to the model element must be made in each diagram on which it appears.
+    These tools may be appropriate for smaller projects in which the development and maintenance of the component model is
+    limited in scope, resources and effort. However, this approach is impractical for a team of practitioners responsible
+    for maintaining an up-to-date component model that interoperates with other models, such as the requirements and
+    operational models.<br />
+</p>
+<p>
+    Whichever option you choose, do not underestimate the importance of using a common notation and standard like UML 2.
+    All diagrams, irrespective of representation option, should use formal notation, and UML 2 is recommended.<br />
+</p></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Дополнительные сведения</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Справочные таблицы</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/checklists/component_model_F85D7AB9.html" guid="_vKC9QDejEdyFMtjeREc5MQ">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Рекомендации</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/guidelines/managing_data_with_components_D0B70DAF.html" guid="_IFoswDfTEdy5uPLchEwddA">Managing Data With Components</a>
+</li>
+</ul>
+</td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Рекомендации по оценке</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/estimationconsiderations/component_model_7500CD0C.html" guid="_uUje4DfTEdy5uPLchEwddA">Component Model</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div>
+<div id="bg"></div>
+<div id="content-comment-rtc-oslc"></div>
+</div>
+<script src="./../../scripts/ContentComment.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/css/comment.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentComment.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" lang="ru" xml:lang="ru">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Артефакт: Data Migration Specification</title>
+<meta name="uma.type" content="Artifact">
+<meta name="uma.name" content="data_migration_specification">
+<meta name="uma.presentationName" content="Data Migration Specification">
+<meta name="uma.category" content="@Type:@Name:@DisplayName">
+<meta name="element_type" content="Artifact">
+<meta name="filetype" content="description">
+<meta name="role" content="none">
+<link rel="StyleSheet" href="./../../css/default.css" type="text/css">
+<script src="./../../scripts/ContentPageResource.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageSubSection.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/ContentPageToolbar.js" type="text/javascript" language="JavaScript"></script><script src="./../../scripts/contentPage.js" type="text/javascript" language="JavaScript"></script><script type="text/javascript" language="JavaScript">
+					var backPath = './../../';
+					var imgPath = './../../images/';
+					var nodeInfo=[{view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_5JQLoK80Edy9cPK11VzBuQ", "_0hQBIDDBEdyz_pzDMsV8FQ"]}, {view: "view:_HcLkwIUHEd2L1_q-wjXweA", path: ["_HcLkwIUHEd2L1_q-wjXweA", "_0NHUEGm6Ed-FnY0iDvOKYw", "_oN-xIGnREd-FnY0iDvOKYw", "_5JQLoK80Edy9cPK11VzBuQ", "_0hQBIDDBEdyz_pzDMsV8FQ"]}];
+					contentPage.preload(imgPath, backPath, nodeInfo, '', false, false, false);
+				</script>
+</head>
+<body>
+<div id="breadcrumbs"></div>
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+<tr>
+<td valign="top"><a name="Top"></a>
+<div id="page-guid" value="_0hQBIDDBEdyz_pzDMsV8FQ"></div>
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+<tr>
+<td class="pageTitle" nowrap="true">Артефакт: Data Migration Specification</td><td width="100%">
+<div align="right" id="contentPageToolbar"></div>
+</td>
+</tr>
+</table>
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td class="pageTitleSeparator"><img src="./../../images/shim.gif" alt="" title="" height="1"></td>
+</tr>
+</table>
+<div class="overview">
+<table width="97%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50"><img src="./../../images/artifact.gif" alt="" title=""></td><td>
+<table class="overviewTable" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td valign="top">This artifact describes data sources to be migrated, and specifies the mapping as well as any required data transformation processes between the source data and the target data.</td>
+</tr>
+<tr>
+<td>Домены: <a href="./../../core.default.cat_def.base/domains/development_domain_F86779DE.html" guid="_5JQLoK80Edy9cPK11VzBuQ">Development</a></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Назначение</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell">This artifact is used to document how source data is transformed into target data, either as one-time data conversions or
+via ongoing data interfaces. It is also used as a basis for validating the data mappings between systems.</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Описание</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Основное описание</th><td class="sectionTableCell"><p>
+    This artifact is a detailed description of the requirements for accomplishing data transfers. A data reference can be
+    either a source (sending data into the system -inbound) or a target (receiving data from the system -outbound).
+</p>
+<p>
+    Appropriate data sources are found for each of&nbsp;the target data elements, and then rules are drafted to extract,
+    transform, and move the source to the target data element. Rules are developed for the following:
+</p>
+<ul>
+    <li>
+        Data selection - rules describing the criteria by which data is to be selected
+    </li>
+    <li>
+        Data cleansing - rules describing how the source data will be cleansed as it is extracted
+    </li>
+    <li>
+        Error detection and correction - rules defining how missing or invalid data should be treated
+    </li>
+    <li>
+        Data mapping - rules describing what must be done to the source data (transformation) to satisfy target data
+        requirements
+    </li>
+</ul></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Краткая схема</th><td class="sectionTableCell"><p>
+    This artifact contains the following information:
+</p>
+<ul>
+    <li>
+        Scope of the Migration
+    </li>
+    <li>
+        Data Profile 
+        <ul>
+            <li>
+                Data references (sources and targets)
+            </li>
+            <li>
+                Data attributes
+            </li>
+            <li>
+                Data attribute dependencies
+            </li>
+        </ul>
+    </li>
+    <li>
+        Data Mapping Table
+    </li>
+    <li>
+        Data Transformation Processes
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Иллюстрации</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Примеры</th><td class="sectionTableCell">
+<ul>
+<li>
+<a href="./../../core.tech.common.extend_supp-ibm/guidances/examples/data_migration_specification_35E293EE.html" guid="_O3naAAo4Edygr55FhBZqVw">Data Migration Specification</a>
+</li>
+</ul>
+</td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Ключевые условия</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<td class="sectionTableSingleCell"><ul class="noindent">
+    <li>
+        It is preferable to have legacy developers from the source data reference as participants in the data mapping
+        process.
+    </li>
+    <li>
+        Data mapping rules may be stored in an automated tool, preferably one with a repository.
+    </li>
+    <li>
+        The logical level of the data model should be completed, and the external data references identified before the
+        data mapping is begun.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div class="sectionHeading">Доводка</div>
+<div class="sectionContent">
+<table class="sectionTable" border="0" cellspacing="0" cellpadding="0">
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Последствия отсутствия</th><td class="sectionTableCell"><p>
+    If this artifact is not created, the formal rules and procedures for data extraction, cleansing, and subsequent
+    transformation are not documented for review.
+</p>
+<p>
+    Data is often a critical component of any system; therefore failure to analyze and correctly map data between different
+    data structures or systems may lead to unexpected results.
+</p>
+<p>
+    Without this artifact, developers are required to have an understanding of the underlying data and perform the data
+    mappings directly in the code.
+</p></td>
+</tr>
+<tr valign="top">
+<th class="sectionTableHeading" scope="row">Причины для отказа</th><td class="sectionTableCell"><p>
+    Some reasons for not needing this artifact are:
+</p>
+<ul>
+    <li>
+        There is no data to be migrated.
+    </li>
+    <li>
+        The data migration is straightforward enough that it can be directly implemented and verified without formal
+        up-front analysis.
+    </li>
+</ul></td>
+</tr>
+</table>
+</div>
+<div>
+<div id="bg"></div>
+<div id="content-comment-rtc-oslc"></div>
+</div>
+<script src="./../../scripts/ContentComment.js" type="text/javascript" language="JavaScript"></script>
+<link rel="stylesheet" type="text/css" href="./../../css/css/comment.css">
+<script type="text/javascript" language="JavaScript">
+			setTimeout('contentComment.init()',500);
+		</script>
+<noscript>Please enable JavaScript to view the comments
+			powered by Rational Team Concert.</noscript>
+<table class="copyright" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td class="copyright"><p>
+    Licensed Materials - Property of IBM<br />
+    &copy; &nbsp;Copyright IBM Corp.&nbsp;1987, 2012.&nbsp; All Rights Reserved.
+</p></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+<script type="text/javascript" language="JavaScript">
+				contentPage.onload();
+			</script>
+</html>
